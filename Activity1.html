@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Capstone project</title>
+    <style>
+        body{
+            background-color:rgb(63, 131, 63);
+            font-family:Arial, Helvetica, sans-serif;
+        }
+        .topnav{
+            background-color:yellow;
+            overflow:hidden;
+        }
+        .topnav a{
+            float:left;
+            text-align:center;
+            padding: 14px 16px;
+            font-size:17px;
+        }
+        .images{
+            width:1200px;
+            height:800px;
+        }
+    </style>
+   
+</head>
+
+<body>
+    <center>
+    <div class="topnav">
+      <a>Home</a>
+     <a>About Us</a>
+       <a>Gallery</a>
+        <a>project</a>
+           <a>Contact Us</a>
+    </div>
+     <div class="content">
+        <img class="images" src="https://cdn.marvel.com/content/2x/006hbb_ons_mas_mob_01_0.jpg">
+        <img class="images" src="https://wallpapers.com/images/hd/spider-man-pictures-0v5rthp1rlwx1b4r.jpg">
+        <img class="images" src="https://static0.cbrimages.com/wordpress/wp-content/uploads/2025/09/batman-1-header.jpg?w=1600&h=1200&fit=crop">
+        <img class="images" src="https://www.screenhub.com.au/wp-content/uploads/sites/4/2025/09/marvels-wolverine.jpg">
+        <img class="images" src="https://static0.cbrimages.com/wordpress/wp-content/uploads/2025/07/10-things-zack-snyder-s-man-of-steel-did-better-than-superman-2025.jpg?w=1600&h=900&fit=crop">
+     </div>
+ <script>
+        var imageindex=0
+        slide()
+        function slide(){
+            var i
+            var x=document.getElementsByClassName("images")
+            for(i=0;i<x.length;i++){
+                x[i].style.display="none"
+            }
+            imageindex++
+            if(imageindex>x.length){
+                imageindex=1
+
+            }
+            x[imageindex].style.display="block"
+            setTimeout(slide,3000)
+        }
+    </script>
+</center>
+</body>
+
+
+
+
+</html>
